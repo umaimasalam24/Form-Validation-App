@@ -1,0 +1,101 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft Pink Gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: #fff0f5; /* Light blush */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(255, 182, 193, 0.3);
+    width: 100%;
+    max-width: 420px;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #d63384; /* Rose */
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #c2185b; /* Deep pink */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #e0a9b0;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff6f91;
+    box-shadow: 0 0 6px rgba(255, 111, 145, 0.4);
+}
+
+.error-message {
+    color: #e63946;
+    font-size: 0.85rem;
+    display: none;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6f91; /* Medium pink */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3e6c; /* Darker pink */
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 25px;
+    }
+}
